@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="bg-start">
+        <button id="start">Start Game</button>
+
+    </div>
+    <div class="end">
+        <div class="box">
+            <h3>Congratulations!</h3>
+            <button id="again">Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>Memory Card Game</h1>
+            </div>
+            <div class="header-info">
+                <div class="">
+                    <h4>seconds: <span id="seconds">0</span> </h4>
+                    <h4>tries: <span id="tries">0</span></h4>
+                </div>
+                <h4>Hello: <span id="gamer"></span></h4>
+                <h4><span id="score">0</span> : score</h4>
+            </div>
+        </header>
+        <div class="game-board">
+            <div class="item" data-img="discord">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+            </div>
+            <div class="item" data-img="discord">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-discord"></i>
+                </div>
+            </div>
+
+
+            <div class="item" data-img="twitter">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="item" data-img="twitter">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="item" data-img="linkedin">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="item" data-img="linkedin">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+
+            <div class="item" data-img="facebook">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </div>
+            <div class="item" data-img="facebook">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </div>
+
+            <div class="item" data-img="instagram">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="item" data-img="instagram">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+
+
+            <div class="item" data-img="youtube">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="item" data-img="youtube">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+
+
+
+            <div class="item" data-img="pinterest">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+
+            <div class="item" data-img="pinterest">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+
+
+            <div class="item" data-img="slack">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-slack"></i>
+                </div>
+            </div>
+
+            <div class="item" data-img="slack">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-slack"></i>
+                </div>
+            </div>
+
+
+
+            <div class="item" data-img="tiktok">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+            <div class="item" data-img="tiktok">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+            <div class="item" data-img="dribbble">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-dribbble"></i>
+                </div>
+            </div>
+            <div class="item" data-img="dribbble">
+                <div class="card front"></div>
+                <div class="card back">
+                    <i class="fab fa-dribbble"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <audio src="/false.mp3" preload="auto" id="false"></audio>
+    <audio src="/right.mp3" preload="auto" id="right"></audio>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
